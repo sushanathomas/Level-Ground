@@ -1,6 +1,6 @@
 # Level Ground
 
-Philly Water Ice is a responsive website created as part of my software engineering coursework.
+Level Ground is a responsive website created as part of my software engineering coursework.
 
 ## Technologies Used
 
@@ -11,6 +11,7 @@ Philly Water Ice is a responsive website created as part of my software engineer
 
 - Responsive design
 - Navigation
+- Interactive webpage elements
 - Mobile-friendly layout
 
 ## Live Website
