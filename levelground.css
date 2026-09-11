@@ -72,7 +72,7 @@ main h4{
 }
 
 main img{
-    width: 5rems; 
+    width: 5rem; 
     margin: 10px 40%; 
 }
 main span{
@@ -228,145 +228,421 @@ footer{
 
 /* ========================================
    MEDIA QUERY — 1024px
-   Purple background + White text
+   Small Laptop
 ======================================== */
 
 @media screen and (max-width: 1024px) {
 
-    header,
-    main,
-    .secUno,
-    .secDos,
-    .secTres,
-    footer {
-        background: rgb(217, 173, 237);
-    }
-    header a,
-    header button,
-    main h1,
-    main h4,
-    main span,
-    .secUno h2,
-    .secUno p,
-    .dosDos h3,
-    .dosDos p,
-    .dosDos li,
-    .tresDos h2,
-    .tresDos p,
-    .tresDos li,
-    .twoFoot,
-    .twoFoot a,
-    .twoFoot p,
-    .footEater,
-    .fourFoot,
-    .fourFoot p {
-        color: white;
-    }
-     header,
-    .secDos,
-    .oneFoot,
-    .fourFoot {
-        flex-direction: column;
-    }
-    .secDos,
-    .oneFoot,
-    .fourFoot {
-        display: flex;
-    }
     header {
-        gap: 15px;
+        padding: 15px 25px;
+    }
+
+    main {
+        padding: 40px 30px;
+    }
+
+    main h1 {
+        font-size: 50px;
+    }
+
+    main h4 {
+        width: 90%;
+        margin: 0 auto;
+        padding: 25px;
+    }
+
+    .secUno p {
+        width: 75%;
+    }
+
+    .secDos {
+        gap: 20px;
         padding: 20px;
     }
-    .dosDos {
-        width: 100%;
-        margin: 20px 0;
+
+    .secDos .dosDos {
+        margin: 25px 10px;
     }
-    .twoFoot {
-        width: 100%;
+
+    .dosDos ul {
+        margin: 30px auto;
+    }
+
+    .tresUno {
+        padding: 4rem 2rem;
+    }
+
+    .tresDos ul {
+        margin: 30px auto;
+    }
+
+    footer {
+        padding: 15px;
     }
 }
 
+
 /* ========================================
    MEDIA QUERY — 768px
-   Yellow background + Black text
+   Tablet
 ======================================== */
 
 @media screen and (max-width: 768px) {
 
-    header,
-    main,
-    .secUno,
-    .secDos,
-    .secTres,
-    footer {
-        background: yellow;
+    /* ---------------- HEADER ---------------- */
+
+    header {
+        background: rgb(95, 107, 126);
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
     }
-    header a,
-    header button,
-    main h1,
-    main h4,
-    main span,
+
+    header nav {
+        display: flex;
+        gap: 20px;
+    }
+
+    header a {
+        color: white;
+    }
+
+    header button {
+        background: white;
+        color: rgb(95, 107, 126);
+    }
+
+
+    /* ---------------- MAIN ---------------- */
+
+    main {
+        background: rgb(95, 107, 126);
+        padding: 40px 25px;
+    }
+
+    main h1 {
+        font-size: 45px;
+        padding: 15px;
+        color: white;
+    }
+
+    main h4 {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+        font-size: 22px;
+        text-align: center;
+        color: white;
+    }
+
+    main img {
+        display: block;
+        margin: 20px auto;
+    }
+
+
+    /* ---------------- SECTION UNO ---------------- */
+
+    .secUno {
+        background: white;
+        color: black;
+    }
+
     .secUno h2,
-    .secUno p,
+    .secUno p {
+        color: black;
+    }
+
+    .secUno p {
+        width: 80%;
+    }
+
+
+    /* ---------------- SECTION DOS ---------------- */
+
+    .secDos {
+        background: rgb(215, 218, 222);
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .secDos .dosDos {
+        width: 100%;
+        margin: 20px 0;
+    }
+
     .dosDos h3,
     .dosDos p,
-    .dosDos li,
+    .dosDos li {
+        color: black;
+    }
+
+    .blankbox-1 {
+    background: black;
+    width: 80%;
+    height: 120px;
+    min-height: 0;
+    margin: 20px auto;
+}
+
+    .dosDos ul {
+        margin: 30px auto;
+    }
+
+
+    /* ---------------- SECTION TRES ---------------- */
+
+    .secTres {
+        background: white;
+        color: black;
+    }
+
+    .tresUno {
+        padding: 4rem 2rem;
+    }
+
+    .tresDos {
+        padding: 0 25px;
+    }
+
     .tresDos h2,
     .tresDos p,
-    .tresDos li,
-    .twoFoot,
-    .twoFoot a,
-    .twoFoot p,
-    .footEater,
-    .fourFoot,
-    .fourFoot p {
+    .tresDos li {
         color: black;
+    }
+
+    .tresDos ul {
+        margin: 30px auto;
+    }
+
+
+    /* ---------------- FOOTER ---------------- */
+
+    footer {
+        background: rgb(24, 29, 37);
+    }
+
+    .oneFoot {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .twoFoot {
+        width: 100%;
+        color: white;
+    }
+
+    .twoFoot p,
+    .twoFoot a {
+        color: white;
+        text-align: left;
+    }
+
+    .fourFoot {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        color: white;
+    }
+
+    .fourFoot img {
+        margin-left: 0;
     }
 }
 
+
+
 /* ========================================
    MEDIA QUERY — 600px
-   Pink background + White text
+   Mobile
 ======================================== */
 
 @media screen and (max-width: 600px) {
-   
-    header,
-    main,
-    .secUno,
-    .secDos,
-    .secTres,
-    footer {
-        background: pink;
+
+    /* ---------------- HEADER ---------------- */
+
+    header {
+        background: rgb(95, 107, 126);
+        padding: 15px;
     }
-    header a,
-    header button,
-    main h1,
-    main h4,
-    main span,
+
+    /* Hide navigation on mobile */
+    header nav {
+        display: none;
+    }
+
+    header button {
+        background: white;
+        color: rgb(95, 107, 126);
+    }
+
+
+    /* ---------------- MAIN ---------------- */
+
+    main {
+        background: rgb(95, 107, 126);
+        padding: 30px 15px;
+    }
+
+    main h1 {
+        font-size: 36px;
+        padding: 10px;
+    }
+
+    main h4 {
+        width: 100%;
+        margin: 0;
+        padding: 15px 5px;
+        font-size: 19px;
+        text-align: center;
+    }
+
+    main img {
+        max-width: 100%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    main span {
+        margin: 30px 5px;
+    }
+
+
+    /* ---------------- SECTION UNO ---------------- */
+
+    .secUno {
+        background: white;
+        color: black;
+        padding: 40px 20px;
+    }
+
     .secUno h2,
-    .secUno p,
+    .secUno p {
+        color: black;
+    }
+
+    .secUno h2 {
+        font-size: 32px;
+    }
+
+    .secUno p {
+        width: 100%;
+        font-size: 20px;
+    }
+
+
+    /* ---------------- SECTION DOS ---------------- */
+
+    .secDos {
+        background: rgb(215, 218, 222);
+        padding: 25px 15px;
+    }
+
+    .secDos .dosDos {
+        width: 100%;
+        margin: 15px 0;
+    }
+
     .dosDos h3,
     .dosDos p,
-    .dosDos li,
-    .tresDos h2,
-    .tresDos p,
-    .tresDos li,
-    .twoFoot,
-    .twoFoot a,
+    .dosDos li {
+        color: white;
+    }
+
+    .dosDos p {
+        font-size: 20px;
+    }
+
+    .blankbox-1 {
+        display: none; 
+        margin: 20px 0;
+        min-height: 130px;
+        width: 100%;
+        height: 100px;
+        margin: 15px auto;
+    }
+
+    .dosDos ul {
+        width: 160px;
+        margin: 25px auto;
+        font-size: 20px;
+    }
+
+
+    /* ---------------- SECTION TRES ---------------- */
+
+    .secTres {
+        background: white;
+        color: black;
+    }
+
+    .tresUno {
+        padding: 3rem 20px;
+    }
+
+    .tresDos {
+        padding: 0;
+    }
+
+    .tresDos h2 {
+        font-size: 32px;
+        color: black;
+    }
+
+    .tresDos p {
+        font-size: 20px;
+        color: black;
+    }
+
+    .tresDos li {
+        color: black;
+    }
+
+    .tresDos ul {
+        width: 160px;
+        margin: 25px auto;
+    }
+
+
+    /* ---------------- FOOTER ---------------- */
+
+    footer {
+        background: rgb(24, 29, 37);
+        padding: 20px;
+    }
+
+    .oneFoot {
+        flex-direction: column;
+    }
+
+    .twoFoot {
+        width: 100%;
+        color: white;
+    }
+
     .twoFoot p,
-    .footEater,
-    .fourFoot,
+    .twoFoot a {
+        color: white;
+        text-align: left;
+    }
+
+    .footEater {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .fourFoot {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        color: white;
+    }
+
     .fourFoot p {
         color: white;
     }
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    header button {
-    background: black;
-    color: white;
+
+    .fourFoot img {
+        margin-left: 0;
     }
 }
