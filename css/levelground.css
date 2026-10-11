@@ -1,0 +1,308 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Sofia Sans Extra Condensed", sans-serif;
+}
+Clear fix hack .clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+header,
+footer {
+    clear: both;
+}
+/******************************************
+/* HEADER
+/*******************************************/
+header{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    height: auto; 
+    width: 100%;
+    background: rgb(95, 107, 126);
+}
+header a{ 
+    font-size: 12px;
+    text-decoration: none;
+    margin-left: 10px; 
+    font-size: 18px;
+    color: white; 
+}
+header button{
+     width: 100px; 
+     margin-right: 10px; 
+     height: 30px; 
+     border-radius: 10%;
+     font-size: 18px; 
+     color: rgb(95, 107, 126);
+     background: white;
+}
+/******************************************
+/* MAIN CONTENT
+/*******************************************/
+main{
+    height: auto;  
+    padding: 50px ; 
+    background: rgb(95, 107, 126); 
+}
+main section{
+    width: 100%; 
+    display: block;
+}
+
+main h1{
+    text-align: center;   
+    width: 100%;
+    padding: 20px; 
+    font-size: 60px;
+    color: white; 
+}
+main h4{
+    width: 80%; 
+    padding: 30px;
+    margin-left: 6rem;
+    font-size: 25px;
+    color: white; 
+}
+
+main img{
+    width: 5rems; 
+    margin: 10px 40%; 
+}
+main span{
+    text-align: center;
+    display: block;  
+    font-size: 1rem;
+    color: rgb(57, 59, 71); 
+    margin: 50px 5px; 
+}
+/******************************************
+/* SECTION 1
+/*******************************************/
+
+.secUno{
+    height: auto;  
+    padding: 30px 50px; 
+    text-align: center;
+}
+
+.secUno h2{
+    font-size: 40px; 
+    text-align: center;
+    margin-top: 30px 
+}
+
+.secUno p{
+    font-size: 25px;
+    display: block; 
+    margin: 0 auto; 
+    font-weight: 350;
+    width: 60%; 
+}
+/******************************************
+/*SECTION 2
+/*******************************************/
+
+.secDos{
+     height: auto; 
+    display: flex; 
+    background: rgb(215, 218, 222);
+}
+.secDos .dosDos{
+    flex: 1; 
+    margin: 40px; 
+}
+.blankbox-1{
+    margin: 30px; 
+    background: rgb(95, 107, 126);
+}
+.dosDos h3{
+    text-align: center;
+    font-size: 24px;
+    margin: 0; 
+}
+.dosDos p{
+    margin: 5px;
+    font-size: 24px; 
+}
+.dosDos ul{
+    border: 2px solid rgb(150, 147, 147); 
+    list-style: none;
+    text-align: center;
+    font-size: 24px;
+    margin: 40px 110px ; 
+    width: 180px; 
+}
+.dosDos li{
+    margin-top: 5px;  
+}
+/******************************************
+/* SECTION 3
+/*******************************************/
+
+.secTres{
+    height: auto;  
+    align-items: center;
+}
+.tresUno{
+    /* height: auto;   */
+    margin: 15px; 
+    padding: 5rem; 
+}
+.tresDos{ 
+    padding: 0 50px; 
+}
+.tresDos h2{
+    font-size: 40px; 
+    text-align: center;
+    margin: 0; 
+}
+.tresDos p{
+    font-size: 24px; 
+    padding: 10px; 
+    text-align: center;
+}
+.tresDos ul{
+    list-style: none;
+    text-align: center;
+    font-size: 24px;
+    margin: 40px 40%;
+    width: 180px; 
+}
+.tresDos li{
+    border: 1px solid rgb(150, 147, 147); 
+    font-size: 24px;
+}
+/******************************************
+/* FOOTER
+/*******************************************/
+
+footer{
+    height: auto; 
+    column-gap: 100px;
+    background: rgb(24, 29, 37);
+    padding: 10px; 
+}
+.oneFoot{
+    margin-top: 10px; 
+    display: flex; 
+}
+.twoFoot{
+    flex: 1; 
+     color: white; 
+     line-height: 1.5; 
+}
+.twoFoot a{
+    color: white; 
+    font-style: normal;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+}
+.twoFoot p{
+    text-align: right;
+    font-weight: bold;
+}
+.footEater{
+    display: block; 
+    width: 80px; 
+    margin: 2px 10px; 
+    word-spacing: 10px;
+}
+.fourFoot{
+    border-top: 2px solid white; 
+    color: white; 
+    padding: 10px; 
+    display: flex; 
+    align-items: center;
+    font-weight: bold;
+}
+.fourFoot img{
+    margin-left: auto;   
+}
+
+.secDos {
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+}
+
+.secDos .dosDos {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Reserve equal space for each heading */
+.dosDos h3 {
+    min-height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Give both photos the same width and height */
+.dosDos img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.dosDos p {
+    margin: 15px 0;
+}
+
+/* Keep both buttons aligned and centered */
+.dosDos ul {
+    margin: auto auto 0;
+}
+
+
+/******************************************
+/* MEDIA Queries
+/*******************************************/
+
+@media screen and (max-width: 1024px) {
+    header, main, .secUno, .secDos, .secTres, footer{
+        background: rgb(173, 225, 173);
+    }
+     header, main, .secUno, .secDos, .secTres, .mainHead, footer{
+        color: black; 
+     }
+}
+
+@media screen and (max-width: 768px) {
+    
+   header, main, .secUno, .secDos, .secTres, footer{
+        background: lightblue;
+    }
+    header, main, .secUno, .secDos, .secTres, footer{
+        color: navy; 
+    }
+     .secDos {
+        flex-direction: column;
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+     .box {
+        width: 100%;
+    }
+    header, main, .secUno, .secDos, .secTres, footer{
+        background: pink;
+    }
+    header, main, .secUno, .secDos, .secTres, footer{
+        color: white; 
+    }
+}
