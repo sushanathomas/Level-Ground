@@ -25,7 +25,3 @@ Coming soon!
 ## What I Learned
 
 While building this project, I practiced HTML structure, CSS styling, responsive design.
-
-## Author
-
-Sushana Thomas
